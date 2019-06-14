@@ -10,6 +10,8 @@ $clientAddress = htmlspecialchars($_POST['residencia_registro']);
 $clientPhone = htmlspecialchars($_POST['telefono_registro']);
 $clientCourse = htmlspecialchars($_POST['elegir_curso']);
 $courseMeaning = "";
+$code = crypt($clientName.rand(1,2048),'st');
+
 // 
 
 if($clientEmail == ""){
@@ -42,11 +44,13 @@ switch ($clientCourse) {
         $courseMeaning = "Undefine";
         break;
 }
-$sql = "INSERT INTO registro (nombre, apellido, email, pais, direccion, residencia, telefono, curso) 
-        VALUES ('$clientName','$clientLName','$clientEmail','$clientCountry','$clientDirection','$clientAddress','$clientPhone','$courseMeaning')";
+$sql = "INSERT INTO registro (nombre, apellido, email, pais, direccion, residencia, telefono, curso, code) 
+        VALUES ('$clientName','$clientLName','$clientEmail','$clientCountry','$clientDirection','$clientAddress','$clientPhone','$courseMeaning','$code')";
 
 if(mysqli_query($conn,$sql)){
-    echo "Nuevo registro añadido";
+    echo "Redireccionando...
+    <script>window.location.href='index.html';</script>
+    ";
 } else{
     echo "Error al insertar Registro \n".$conn->error;
 }
