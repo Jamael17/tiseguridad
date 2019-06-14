@@ -15,19 +15,30 @@
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="fonts.css">
 	<link rel="stylesheet" href="estilos.css" />
-
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 </head>
 <body>
 
 <!-- ¿ QUE NECESITO?
 
-	NECESITO VALIDAR EL FORMULARIO CON PHP, YO LO VALIDARE CON JAVASCRIPT PARA TENER DOBLE SEGURIDAD SI ES POSIBLE, AL SELECCIONAR LA OPCION DE PAGAR UNA VEZ ELEGIDO EL CURSO, SE REDIRECCIONARA A UN LINK CUALQUIER (QUE DESPUÉS YO LO CAMBIARE POR EL VIDEO GRATIS O UNA OPCIÓN DE PAGO), Y AL REDIRECCIONARSE TODA ESTA INFORMACIÓN DEBE QUEDAR ALMACENADA EN UNA BASE DE DATOS, SI LA PERSONA NO PUEDE PAGAR EL CURSO ENTONCES NO SE ALMACENARA EN LA BASE DE DATOS...
+	NECESITO VALIDAR EL FORMULARIO CON PHP, YO LO VALIDARE CON JAVASCRIPT PARA TENER DOBLE SEGURIDAD SI ES 
+	POSIBLE, AL SELECCIONAR LA OPCION DE PAGAR UNA VEZ ELEGIDO EL CURSO, SE REDIRECCIONARA A UN LINK 
+	CUALQUIER (QUE DESPUÉS YO LO CAMBIARE POR EL VIDEO GRATIS O UNA OPCIÓN DE PAGO), Y AL REDIRECCIONARSE 
+	TODA ESTA INFORMACIÓN DEBE QUEDAR ALMACENADA EN UNA BASE DE DATOS, SI LA PERSONA NO PUEDE PAGAR EL 
+	CURSO ENTONCES NO SE ALMACENARA EN LA BASE DE DATOS...
 
-	PARA QUE TE HAGAS UNA IDEA SOBRE EL PROCESO SERAN (CURSOS GRATIS POR YOUTUBE Y OTRAS PLATAFORMAS, CURSOS DE PAGO MEDIANTE VIMEO, Y CURSOS TIPO DVD QUE SE ENVIARAN POR ZOOM Y ESOS METODOS DE ENVIO (ESTO SI SE PAGARA CON PAYPAL DESDE NUESTRA WEB) ). 
+	PARA QUE TE HAGAS UNA IDEA SOBRE EL PROCESO SERAN (CURSOS GRATIS POR YOUTUBE Y OTRAS PLATAFORMAS, 
+	CURSOS DE PAGO MEDIANTE VIMEO, Y CURSOS TIPO DVD QUE SE ENVIARAN POR ZOOM Y ESOS METODOS DE ENVIO 
+	(ESTO SI SE PAGARA CON PAYPAL DESDE NUESTRA WEB) ). 
 
-	AHORA TENGO UNA DUDA, COMO HACEMOS PARA BLOQUEAR UNA PAGINA DE LA WEB, Y DESBLOQUEARLA UNA VEZ HAYA PAGADO CON PAYPAL (UN CURSO FISICO), PORQUE PAYPAL, LUEGO DE QUE PAGUES TE PIDE UNA DIRECCIÓN DE TU WEB PARA REDIRECCIONAR A LA GENTE, Y LA GENTE PUEDE SALTAR ESTE PASO E IR DIRECTAMENTE AL LINK DE REDIRECCIÓN...
+	AHORA TENGO UNA DUDA, COMO HACEMOS PARA BLOQUEAR UNA PAGINA DE LA WEB, Y DESBLOQUEARLA UNA VEZ 
+	HAYA PAGADO CON PAYPAL (UN CURSO FISICO), PORQUE PAYPAL, LUEGO DE QUE PAGUES TE PIDE UNA DIRECCIÓN 
+	DE TU WEB PARA REDIRECCIONAR A LA GENTE, Y LA GENTE PUEDE SALTAR ESTE PASO E IR DIRECTAMENTE AL LINK 
+	DE REDIRECCIÓN...
 
-	SOLUCIÓN: CREO QUE LO PODEMOS ENVIAR AL INICIO, PERO EN ESE PROCESO DE REDIRECCIONAMIENTO,EL PHP SE DA CUENTA QUE SI SE REALIZO EL PAGO, Y ENTONCES GUARDA LA BASE DE DATOS Y REDIRECCIONA AL INICIO.
+	SOLUCIÓN: CREO QUE LO PODEMOS ENVIAR AL INICIO, PERO EN ESE PROCESO DE REDIRECCIONAMIENTO, 
+	EL PHP SE DA CUENTA QUE SI SE REALIZO EL PAGO, Y ENTONCES GUARDA LA BASE DE DATOS Y REDIRECCIONA 
+	AL INICIO.
 -->
 
 <!-- FLEXBOXGRID (flexboxgrid.com)
@@ -113,46 +124,22 @@ lg -> large
 				<div class="columnas">
 
 					<!-- FORMULARIO -->
-					<form action="" method="post" class="col-xs-12">
+					<form action="registro.php" method="post" class="col-xs-12">
 
 					<!-- ESTOS SON LOS INPUTS QUE SE VISUALIZAN A LA IZQUIERDA -->
 						<div class="columna_izquierda col-xs-6">
 
 						<!-- TITULOS Y SUS INPUTS-->
-							<label for="nombre_registro"><b>*Nombre:</b> <input type="text" name="nombre_registro" /></label>
-						 	<label for="apellido_registro"><b>*Apellido:</b> <input type="text" name="apellido_registro" /></label>
-						 	<label for="correo_registro"><b>*E-mail:</b> <input type="email" name="correo_registro" /></label>
+							<label for="nombre_registro"><b>*Nombre:</b> <input type="text" name="nombre_registro" required /></label>
+						 	<label for="apellido_registro"><b>*Apellido:</b> <input type="text" name="apellido_registro" required /></label>
+						 	<label for="correo_registro"><b>*E-mail:</b> <input type="email" name="correo_registro" required /></label>
 						 	<!-- SELECT CON OPCIONES DE PAISES LATINOAMERICANOS -->
 						 	<label for="pais"><b>*País:</b> 
 								<br/>
-								 <select name="pais">
-   								 	<option value="ar"> Argentina </option>
-									<option value="bo"> Bolivia </option>
-									<option value="br"> Brasil </option>
-									<option value="ch"> Chile </option>
-									<option value="col"> Colombia </option>
-									<option value="cosr"> Costa Rica </option>
-									<option value="cu"> Cuba </option>
-									<option value="ec">Ecuador </option>
-									<option value="sal">El Salvador </option>
-									<option value="gua">Guayana Francesa</option>
-									<option value="gra">Granada </option>
-									<option value="guat">Guatemala </option>
-									<option value="guay">Guayana </option>
-									<option value="hai">Haití </option>
-									<option value="hon">Honduras  </option>
-									<option value="ja">Jamaica  </option>
-									<option value="mx">México  </option>
-									<option value="nic">Nicaragua  </option>
-									<option value="par">Paraguay  </option>
-									<option value="pan">Panamá </option>
-									<option value="pe">Perú </option>
-									<option value="puer">Puerto Rico </option>
-									<option value="repdom">República Dominicana </option>
-									<option value="suri">Surinam </option>
-									<option value="uru">Uruguay  </option>
-									<option value="ve" selected >Venezuela </option>
-  								</select>
+								<select name="country" class="countries order-alpha" id="countryId">
+									<option value="">Select Country</option>
+								</select>
+	
 							 </label>
 							 
 							 <!-- AQUI SE ELIGEN LAS OPCIONES DE LOS CURSOS Y SE CAMBIA EL PRECIO AUTOMATICAMENTE CON JAVASCRIPT -->
@@ -175,10 +162,10 @@ lg -> large
 
 						<!-- INFORMACIÓN DE LA PARTE DERECHA -->
 						<div class="columna_derecha col-xs-6">
-							<label for="estado_registro"><b>*Estado:</b> <input type="text" name="estado_registro" /></label>
-							 <label for="direccion_registro"><b>*Dirección:</b> <input type="text" name="direccion_registro" /></label>
-							 <label for="residencia_registro"><b>*Residencia:</b> <input type="text" name="residencia_registro" /></label>
-							 <label for="telefono_registro"><b>*Teléfono:</b> <input type="text" name="telefono_registro" /></label>
+							<!-- <label for="estado_registro"><b>*Estado:</b> <input type="text" name="estado_registro" /></label> -->
+							 <label for="direccion_registro"><b>*Dirección:</b> <input type="text" name="direccion_registro" required /></label>
+							 <label for="residencia_registro"><b>*Residencia:</b> <input type="text" name="residencia_registro" required /></label>
+							 <label for="telefono_registro"><b>*Teléfono:</b> <input type="text" name="telefono_registro" required /></label>
 				 		</div>
 
 				 		<!-- PRECIO QUE CAMBIA AUTOMATICAMENTE AL SELECCIONAR UN CURSO-->
@@ -259,8 +246,9 @@ lg -> large
 	<!-- FIN DISEÑADORES-->
 
 	<!-- SCRIPTS -->
-	<script src="jquery.js"></script>
+	<!-- <script src="jquery.js"></script> -->
 	<script src="scripts.js"></script>
-
+	<script src="main.js"></script>
+	<script src="//geodata.solutions/includes/countrystatecity.js"></script>
 </body>
 </html>
