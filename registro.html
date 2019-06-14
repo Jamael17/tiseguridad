@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es-VE">
+<head>
+	<title>tiseguridad</title>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="servicios, seguridad, tiseguridad, seguridadti" />
+	<meta name="description" content="AsesoriasTI es un espacio creado para aportar a los usuarios buenas prácticas en el manejo de la Seguridad TI, Aquí encontraras los métodos más actuales usados por los ciberdelicuentes para obtener información relevante acerca de ti o de tu empresa" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" /><!--NECESITO UN LOGO MÁS GRANDE-->
+	<meta http-equiv="X-UA-Comatible" content="IE=edge,chrome=1" /><!--ACTIVA EL FRAME DE CHROME EN IE-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="shortcut icon" type="image/png" href="img/logo.png" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" href="flexboxgrid.min.css" />
+	<!--<link rel="author" href="humans.txt" />-->
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="estilos.css" />
+
+</head>
+<body>
+
+<!-- ¿ QUE NECESITO?
+
+	NECESITO VALIDAR EL FORMULARIO CON PHP, YO LO VALIDARE CON JAVASCRIPT PARA TENER DOBLE SEGURIDAD SI ES POSIBLE, AL SELECCIONAR LA OPCION DE PAGAR UNA VEZ ELEGIDO EL CURSO, SE REDIRECCIONARA A UN LINK CUALQUIER (QUE DESPUÉS YO LO CAMBIARE POR EL VIDEO GRATIS O UNA OPCIÓN DE PAGO), Y AL REDIRECCIONARSE TODA ESTA INFORMACIÓN DEBE QUEDAR ALMACENADA EN UNA BASE DE DATOS, SI LA PERSONA NO PUEDE PAGAR EL CURSO ENTONCES NO SE ALMACENARA EN LA BASE DE DATOS...
+
+	PARA QUE TE HAGAS UNA IDEA SOBRE EL PROCESO SERAN (CURSOS GRATIS POR YOUTUBE Y OTRAS PLATAFORMAS, CURSOS DE PAGO MEDIANTE VIMEO, Y CURSOS TIPO DVD QUE SE ENVIARAN POR ZOOM Y ESOS METODOS DE ENVIO (ESTO SI SE PAGARA CON PAYPAL DESDE NUESTRA WEB) ). 
+
+	AHORA TENGO UNA DUDA, COMO HACEMOS PARA BLOQUEAR UNA PAGINA DE LA WEB, Y DESBLOQUEARLA UNA VEZ HAYA PAGADO CON PAYPAL (UN CURSO FISICO), PORQUE PAYPAL, LUEGO DE QUE PAGUES TE PIDE UNA DIRECCIÓN DE TU WEB PARA REDIRECCIONAR A LA GENTE, Y LA GENTE PUEDE SALTAR ESTE PASO E IR DIRECTAMENTE AL LINK DE REDIRECCIÓN...
+
+	SOLUCIÓN: CREO QUE LO PODEMOS ENVIAR AL INICIO, PERO EN ESE PROCESO DE REDIRECCIONAMIENTO,EL PHP SE DA CUENTA QUE SI SE REALIZO EL PAGO, Y ENTONCES GUARDA LA BASE DE DATOS Y REDIRECCIONA AL INICIO.
+-->
+
+<!-- FLEXBOXGRID (flexboxgrid.com)
+
+xs ->Extra Small
+sm -> Small
+md -> Medium
+lg -> large
+
+-->
+
+	<header>
+		<!-- ESTA ES LA INFORMACIÓN ALMACENADA EN EL SUBHEADER-->
+		<div class="subheader col-xs-12">
+			<div class="container">
+				<div class="row between-xs middle-xs">
+					<div class="informacion col-xs-12 col-sm-6 center-xs start-sm">
+						<span class="icon-phone telefono"><p>(+54) 000-0000000</p></span>
+						<a><span class="icon-envelop correo"><p>correo@correo.com</p></span></a>
+						<a href="contacto.html">Contacto</a>
+					</div>
+					<div class="registro col-xs-12 col-sm-4 center-xs">
+						<a href="registro.html">Registrarse</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<hr/>
+
+		<div class="logo-menu">
+			<div class="container">
+				<div class="row middle-xs between-xs ">
+					<div class="logo center-xs col-xs-6 col-sm-4 col-md-4 col-lg-2">
+
+						<img src="img/logo.jpg" alt="logo" />
+
+					</div>
+
+					<div class="menu_bar_falcon col-xs-5 col-sm-8 col-md-7 col-lg-10">
+					<!-- INICIO CODIGO MENU -->
+					
+						<div class="menu_total">
+						<div class="menu_bar">
+							<a href="#" class="bt-menu"><span class="icon-menu3"></span>Menu</a>
+						</div>
+ 
+						<nav class="navegar">
+							<ul>
+								<li><a href="index.html"><span class="icon-home3"></span>INICIO</a></li>
+								<li><a href="index.html#services""><span class="icon-bug"></span>SERVICIOS</a></li>
+								<li><a href="herramientas.html"><span class="icon-wrench"></span>HERRAMIENTAS</a></li>
+								<li><a href="cursosonline.html"><span class="icon-video-camera"></span>CURSOS ONLINE</a></li>
+								<li><a href="cursosenfisico.html"><span class="icon-user-tie"></span>CURSOS EN FÍSICO</a></li>
+							</ul>
+						</nav>
+
+					</div>
+						
+					<!-- FIN CODIGO MENU-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+	<!-- SECCION DE REGISTRO -->
+
+		<div class="container">
+			<div class="row">
+				<!-- CONTENEDOR DEL TITULO (LA IMAGEN DE FONDO)-->
+				<div class="la_Pagina col-xs-12">
+				<!-- TITULO DE LA SECCION-->
+					<h1>Registrate</h1>
+				</div>
+			</div>
+		</div>
+	
+		<!-- CONTENEDOR DEL FORMULARIO -->
+		<div class="container">
+			<div class="row">
+				<div class="columnas">
+
+					<!-- FORMULARIO -->
+					<form action="" method="post" class="col-xs-12">
+
+					<!-- ESTOS SON LOS INPUTS QUE SE VISUALIZAN A LA IZQUIERDA -->
+						<div class="columna_izquierda col-xs-6">
+
+						<!-- TITULOS Y SUS INPUTS-->
+							<label for="nombre_registro"><b>*Nombre:</b> <input type="text" name="nombre_registro" /></label>
+						 	<label for="apellido_registro"><b>*Apellido:</b> <input type="text" name="apellido_registro" /></label>
+						 	<label for="correo_registro"><b>*E-mail:</b> <input type="email" name="correo_registro" /></label>
+						 	<!-- SELECT CON OPCIONES DE PAISES LATINOAMERICANOS -->
+						 	<label for="pais"><b>*País:</b> 
+								<br/>
+								 <select name="pais">
+   								 	<option value="ar"> Argentina </option>
+									<option value="bo"> Bolivia </option>
+									<option value="br"> Brasil </option>
+									<option value="ch"> Chile </option>
+									<option value="col"> Colombia </option>
+									<option value="cosr"> Costa Rica </option>
+									<option value="cu"> Cuba </option>
+									<option value="ec">Ecuador </option>
+									<option value="sal">El Salvador </option>
+									<option value="gua">Guayana Francesa</option>
+									<option value="gra">Granada </option>
+									<option value="guat">Guatemala </option>
+									<option value="guay">Guayana </option>
+									<option value="hai">Haití </option>
+									<option value="hon">Honduras  </option>
+									<option value="ja">Jamaica  </option>
+									<option value="mx">México  </option>
+									<option value="nic">Nicaragua  </option>
+									<option value="par">Paraguay  </option>
+									<option value="pan">Panamá </option>
+									<option value="pe">Perú </option>
+									<option value="puer">Puerto Rico </option>
+									<option value="repdom">República Dominicana </option>
+									<option value="suri">Surinam </option>
+									<option value="uru">Uruguay  </option>
+									<option value="ve" selected >Venezuela </option>
+  								</select>
+							 </label>
+							 
+							 <!-- AQUI SE ELIGEN LAS OPCIONES DE LOS CURSOS Y SE CAMBIA EL PRECIO AUTOMATICAMENTE CON JAVASCRIPT -->
+							 <div class="columna_central center-xs">
+							 	<!-- TITULO DE LA SECCION -->
+							 	<label for="elegir_curso" class="colum_center"><b>Elegir el curso:</b>
+							 	<!-- SELECT CON LAS OPCIONES -->
+				 				<select name="elegir_curso" id="column_center_select">
+				 				<option value="1">ANALISTA DE SEGURIDAD</option>
+				 				<option value="2">SNORT</option>
+				 				<option value="3">PENTESTING</option>
+				 				<option value="4">PISHING</option>
+				 				<option value="5">AIRCRACK-NG</option>
+				 				<option value="6">EDITOR DE CODIGO FUENTE</option>
+				 				<option value="7">METASPLOIT</option>
+				 				</select>
+				 				</label>
+							 </div>
+						</div>
+
+						<!-- INFORMACIÓN DE LA PARTE DERECHA -->
+						<div class="columna_derecha col-xs-6">
+							<label for="estado_registro"><b>*Estado:</b> <input type="text" name="estado_registro" /></label>
+							 <label for="direccion_registro"><b>*Dirección:</b> <input type="text" name="direccion_registro" /></label>
+							 <label for="residencia_registro"><b>*Residencia:</b> <input type="text" name="residencia_registro" /></label>
+							 <label for="telefono_registro"><b>*Teléfono:</b> <input type="text" name="telefono_registro" /></label>
+				 		</div>
+
+				 		<!-- PRECIO QUE CAMBIA AUTOMATICAMENTE AL SELECCIONAR UN CURSO-->
+				 		<div class="precio_curso center-xs">
+				 			<label for="precio">*Precio: <p><b id="el_precio">$300</b></p></label>
+				 		</div>
+
+				 		<!-- BOTON DE ENVIO -->
+				 		<input type="submit" name="pagar" value="PAGAR" id="pagar" />
+
+
+				 
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+	<!-- FIN REGISTRO -->
+	
+	<!-- FOOTER -->
+
+	<div class="footer">
+		<div class="container">
+			<div class="row middle-xs center-xs">
+			<!-- ETIQUETAS DEL FOOTER (NO SON KEYWORDS)-->
+				<div class="etiquetas col-xs-12 col-md-4 center-xs start-md">
+					<p>Curso de Seguridad</p>
+					<p>Hacking</p>
+					<p>Ataques informáticos</p>
+					<p>Cursos Online</p>
+					<p>Cursos gratis de seguridad</p>
+					<p>Cursos Baratos</p>
+					<p>Seguridad informática</p>
+					<p>Pentesting</p>
+					<p>Metasploit</p>
+					<p>Editores de codigo</p>
+					<p>Pishing</p>
+					<p>Analista de seguridad</p>
+					<p>SNORT</p>
+					<p>AIRCRACK-NG</p>
+					<p>Servicios de seguridad profesionales</p>
+					<p>Cursos certificados</p>
+					<p>Seguridad informática profesional</p>
+				</div>
+
+				<!-- NUESTRAS REDES SOCIALES -->
+				<div class="redes_sociales col-xs-12 col-md-4 center-xs ">
+					<h2>Redes Sociales</h2>
+					<a href="#"><span class="icon-facebook2"></span></a>
+					<a href="#"><span class="icon-instagram"></span></a>
+					<a href="#"><span class="icon-whatsapp"></span></a>
+				</div>
+
+				<!-- LOGO DE LA EMPRESA -->
+				<div class="logo_footer col-xs-12 col-md-4 center-xs end-md">
+					<img src="img/logo.jpg" alt="logo" />
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- FIN FOOTER -->
+
+	<!-- DISEÑADORES-->
+
+		<div class="diseniadores">
+		<div class="container">
+			<div class="row middle-xs center-xs">
+				<!-- INFORMACION DE NUESTRA AGENCIA -->
+				<div class="sarehcomputer col-sm-5 start-md col-md-6"><p>Diseñado por <a href="#"><b>SAREH COMPUTER</b></a></p></div>
+				<!-- DERECHOS -->
+				<div class="copyright col-sm-6 end-md col-md-6"><p>Copyright © 2016 - Todos los derechos reservados</p></div>
+			</div>
+		</div>
+		</div>
+	<!-- FIN DISEÑADORES-->
+
+	<!-- SCRIPTS -->
+	<script src="jquery.js"></script>
+	<script src="scripts.js"></script>
+
+</body>
+</html>

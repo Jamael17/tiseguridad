@@ -1,0 +1,26 @@
+﻿/* SEGURIDADTI */
+
+/* TEAM */
+	Programmer:  Alejandro Perez
+	Contacto: alexperezofficial01[at]gmail.com
+	From: Venezuela, Caracas
+
+	Programmer:  Engelbert Rojas
+	Contacto: engelbertrojas5[at]gmail.com
+	From: Venezuela, Caracas
+	
+	Programmer:  Juan Curvelo
+	Contacto: juancurvelo99[at]gmail.com
+	From: Venezuela, Caracas
+
+/* THANKS */
+	@w3c http://www.w3.org/
+	            http://flexboxgrid.com
+	            https://caniuse.com
+
+/* SITE */
+	Last update: 2019/07/05
+	Language: Spanish
+	Standars: HTML5, CSS3, JAVASCRIPT, PHP, JQUERY, FLEXBOXGRID
+	Components: Responsive Design, Google Fonts, IcoMoon
+	Software: SublimeText3, SublimeText2, WampServer

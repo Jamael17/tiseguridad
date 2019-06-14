@@ -1,0 +1,970 @@
+*, *:after, *:before
+{
+	border: 0;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 16px;
+	font-family: sans-serif;
+	background-color: #fff;
+	max-width: 1500px;
+}
+
+/* LA CLASE CONTENEDOR QUE VA EN TODAS LAS DIVS CONTENEDORAS*/
+.container{
+	width: 90%;
+	max-width: 1240px;
+}
+
+/* UN CONTAINER CON OTRAS MEDIDAS*/
+.modificar_container{
+	margin: 10.5rem auto 0;
+	max-width: 1510px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+header{
+	height: 11rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background-color: #fff;
+}
+
+
+/* TODOS LOS ELEMENTOS QUE TIENEN UN MISMO WIDTH*/
+.modificar_container, header, .menu_total, 
+.slider1 ul, .slider2 ul, .slider3 ul, .slider1 li, .slider2 li, .slider3 li,
+.logo img, .slideshow, .slider li img, .slider li, .slider ul, .pagination,
+.left, .right, .info, .slider1 li img, .slider2 li img, .slider3 li img,
+.der, .izq, .contenido_empresa img, .contenido_empresa span, .cuadro, 
+.slider4 li .caption4, .slider4 li p:first-child {
+	width: 100%;
+}
+
+/* TODOS LOS ELEMENTOS CON UN MISMO DISPLAY */
+.informacion p, .correo, .slideshow1, .slideshow2, .slideshow3, 
+.titulo_slider h1, .der, .izq ,.der span, .izq span, 
+.contenido_empresa h3, .contenido_empresa p, .etiquetas p,
+.section_contacto span p, #formu p, .info_formulario, #respuesta_formulario,
+.colum_center, .precio_curso label, .precio_curso p, .cursos_online_lista{
+	display: inline-block;
+}
+
+/*---------- SUBHEADER ------------*/
+
+.subheader{
+	padding: .5rem 0;
+}
+
+.informacion{
+	color: #D8D7D0;
+}
+
+/* ICONO DEL TELEFONO Y DEL CORREO*/
+.informacion a span{
+	cursor: pointer;
+	color: #D8D7D0;
+}
+
+/* ICONO DEL TELEFONO Y DEL CORREO AL PASAR EL MENU POR ENCIMA*/
+.informacion a span:hover, .informacion a span p:hover{
+	color: #f8bd00;
+}
+
+.informacion a{
+	color: #D8D7D0;
+}
+
+.informacion a:hover{
+	color: #f8bd00;
+}
+
+.informacion span p{
+	margin: 0 .5rem;
+	font-size: 18px;
+	color: #D8D7D0;
+}
+
+.correo{
+	padding: .5rem .5rem;
+}
+
+.registro a{
+	color: #C4B8BA;
+	font-size: 18px;
+}
+
+.registro a:hover{
+	color: #f8bd00;
+}
+
+.registro a, .informacion, .informacion span p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+
+
+
+/*---------- LOGO-MENU -------------*/
+
+.logo img{
+	height: 90px;
+	margin: .5rem auto;
+}
+
+/*------------- MENU----------------*/
+ 
+.menu_total nav {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+	z-index: 99;
+}
+ 
+.menu_bar {
+	display:none;
+}
+ 
+.menu_total nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+ 
+.menu_total nav ul li {
+	float:left;
+}
+ 
+.menu_total nav ul li a {
+	color: #141413;
+	padding:30px 10px;
+	display:block;
+	text-decoration:none;
+	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+}
+
+.menu_total nav ul li a:hover{
+	color: darkorange;
+}
+
+.menu_total nav ul li span:first-Child{
+	padding-left: 10px;
+}
+ 
+.menu_total nav ul li span {
+	margin-right: 8px;
+}
+ 
+.menu_total nav ul li a:hover {
+	border-bottom: 2px solid darkorange;
+}
+ 
+section {
+	padding:20px;
+}
+
+/*--------- SLIDER ----------*/
+
+ul, ol{
+	list-style: none;
+}
+
+.slideshow{
+	margin: 2rem 0;
+	position: relative;
+}
+
+.slider li img{
+	height: 34rem;
+	max-width: 100%;
+}
+
+.caption{
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 15px 8%;
+	padding-left: 12%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color:  #fff;
+	z-index: 1;
+	text-align: center;
+	float: center;
+}
+
+.slider .caption h1{
+	font-size: 50px;
+}
+
+.slider .caption p{
+	font-size: 22px;
+}
+
+.slider .caption b{
+	margin-top: 30px;
+	background-color: orange;
+	padding: 1rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.slider .caption b:hover{
+	background-color: darkorange;
+}
+
+.slider .caption b a{
+	color: white;
+}
+
+.pagination{
+	position: absolute;
+	top: 105%;
+	display: flex;
+	justify-content: center;
+}
+
+.pagination li{
+	font-size: 20px;
+	margin: 2px 5px;
+	color: #D8D7D0;
+	cursor: pointer;
+}
+
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 45px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.left{
+	left: 15px;
+}
+
+.right{
+	right: 15px;
+}
+
+.left:hover, .right:hover{
+	color: #f8bd00;
+}
+
+/*------ CONTENIDO -----------*/
+
+.el_contenido{
+	float: center;
+	text-align: center;
+}
+
+hr{
+	border: .4px solid #ccc;
+}
+
+.info{
+	background-color: #D8D7D0;
+	height: 16rem;
+	margin-bottom: 2.5rem;
+	color: #141413;
+}
+
+.slideshow1, .slideshow2, .slideshow3{
+	width: 30%;
+	position: relative;
+}
+
+.titulo_slider h1{
+	padding: 1rem;
+	color: #141413;
+}
+
+.slider1 ul, .slider2 ul, .slider3 ul, .slider1 li, .slider2 li, .slider3 li{
+	padding: 0 1rem;
+}
+
+.slider1 li img, .slider2 li img, .slider3 li img{
+	height: 300px;
+}
+
+.der, .izq ,.der span, .izq span{
+	font-size: 32px;
+	cursor: pointer;
+	color: #141413;
+}
+
+.titulo_slider{
+	display: block;
+	text-align: center;
+}
+
+/*-------------- FIN CONTENIDO ------------*/
+
+
+/*----------- CONTENIDO EMPRESA ----------*/
+
+.contenido_empresa img, .contenido_empresa span{
+	height: 5rem;
+	margin-bottom: 1rem;
+}
+
+.contenido_empresa span{
+	font-size: 10rem;
+}
+
+.cuadro{
+	margin: 8rem 0;
+	text-align: center;
+}
+
+.cuadro h3{
+	margin-bottom: 1rem;
+}
+
+/*----------- FIN CONTENIDO EMPRESA ----------*/
+
+
+/*---------------- RECIBIR INFORMACIÓN -----------*/
+
+.recibir_info{
+	background-color: orange;
+	margin-bottom: 5rem;
+}
+
+.input_email{
+	border: 2px solid black;
+	font-size: 18px;
+	padding: .2rem 0;
+}
+
+.info_texto h2{
+	margin: 5rem 0;
+	font-size: 32px;
+	color: #fff;
+}
+
+/*---------------- FIN RECIBIR INFORMACIÓN -----------*/
+
+
+/*---------- OPINION ---------------*/
+
+#titulo_opiniones{
+	color: #141413;
+}
+
+.slideshow4{
+	margin-bottom: 5rem;
+}
+
+.slider4{
+	background-color: darkorange;
+	height: 20rem;
+}
+
+.slider4 li{
+	background-color: green;
+	height: 20rem;
+}
+
+.slider4 li .caption4{
+	height: 20rem;
+	background-color: orange;
+}
+
+.slider4 li .caption4 p:first-child{
+	margin: 0;
+	font-size: 24px;
+	height: 13rem;
+}
+
+.slider4 li .caption4 p{
+	margin: 1.5rem auto;
+	font-size: 24px;
+	height: 2rem;
+}
+
+/*----------- FIN OPINION ------------*/
+
+
+/*----------- FOOTER --------------*/
+
+.footer{
+	margin-top: 1.5rem;
+	background-color: #111111;
+}
+
+.etiquetas{
+	margin: 1rem 0;
+}
+
+.etiquetas p{
+	background-color: orange;
+	margin: .2rem;
+	padding: .2rem ;
+	color: #fff;
+}
+
+.etiquetas p:hover{
+	background-color: rgba(0,0,0,.6);
+}
+
+.redes_sociales span{
+	font-size: 60px;
+	color: #fff;
+	padding: .8rem;
+	border-radius: .5rem;
+}
+
+.redes_sociales h2{
+	margin-top: -25px;
+	margin-bottom: 10px;
+	color: floralwhite;
+}
+
+.redes_sociales span:hover{
+	background-color: rgba(0,0,0,.6);
+}
+
+.logo_footer img{
+	height: 120px;
+	width: 80%;
+	margin: .5rem;
+}
+
+/*----------- FIN FOOTER -----------*/
+
+
+/*----------- DISEÑADORES ----------*/
+
+.diseniadores{
+	background-color: black;
+	color: #fff;
+	padding: .6rem;
+}
+
+.diseniadores a{
+	color: #fff;
+}
+
+.diseniadores a:hover{
+	color: orange;
+	font-size: 1.2rem;
+}
+
+.copyright{
+	color: #fff;
+}
+
+/*------------ FIN DISEÑADORES ----------------*/
+
+
+/*-------------- CONTACTO.html -------------------*/
+
+.section_contacto{
+	padding: 2rem;
+	background-color: orange;
+	color: #fff;
+}
+
+.la_Pagina{
+	background-image: url(img/fondo_pagina.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	text-align: center;
+	margin: 12rem auto 0;
+}
+
+.la_Pagina h1{
+	color: #fff;
+	padding: 2rem;
+	font-size: 50px;
+}
+
+.section_contacto h3, .section_contacto p, .section_formulario h2{
+	margin-bottom: 1rem;
+}
+
+.section_contacto span p{
+	margin-left: 1rem;
+}
+
+.section_formulario{
+	background-color: crimson;
+	color: #fff;
+}
+
+.section_formulario p{
+	margin-bottom: 1.2rem;
+}
+
+.section_formulario input{
+	display: block;
+	margin: 1rem 0;
+	background-color: #e9e9e9;
+	padding: .6rem;
+	width: 100%;
+	color: #b5b5b5;
+}
+
+.section_formulario textarea{
+	display: block;
+	background-color: #e9e9e9;
+	width: 100%;
+	height: 120px;
+}
+
+#respuesta_formulario{
+	width: 30%;
+}
+
+#enviar_formulario{
+	width: 50%;
+	background-color: #f8bd00;
+	color: #fff;
+	border-radius: 1rem;
+}
+
+/*-------------- FIN CONTACTO ---------------*/
+
+
+/*------------- REGISTRO ------------------*/
+
+.columnas{
+	margin-top: 3rem; 
+}
+
+.colum_center{
+	background-color: orange;
+	padding: .6rem;
+	margin: 1rem auto;
+}
+
+.precio_curso label{
+	padding: .6rem;
+	margin: 1rem auto;
+}
+
+.precio_curso label, .precio_curso p{
+	background-color: orange;
+}
+
+.column_center_select{
+	background-color: green;
+}
+
+.columnas input{
+	background-color: #D8D7D0;
+	width: 100%;
+	padding: .2rem 0;
+	margin-bottom: .8rem;
+	color: #141413;
+}
+
+#pagar{
+	margin: 1.5rem auto;
+	padding: 1rem 0;
+	background-color: orange;
+	color: #fff;
+}
+
+#pagar:hover{
+	background-color: green;
+	cursor: pointer;
+}
+
+.columnas label{
+	margin: 3rem 0;
+}
+
+.columna_izquierda, .columna_derecha{
+	float: left;
+}
+
+.columna_izquierda{
+	border-right: 2px solid olive;
+}
+
+.columna_izquierda select{
+	background-color: #D8D7D0;
+	width: 100%;
+	padding: .2rem 0;
+	cursor: pointer;
+}
+
+.columna_izquierda select option{
+	background-color: #fff;
+	color: olive;
+}
+
+/*------------- FIN REGISTRO ------------------*/
+
+
+/*--------------- CURSOS ONLINE ----------*/
+
+.cursos_online_lista{
+	margin: 2rem auto;
+}
+
+.cursos_online_lista h2{
+	width: 100%;
+	padding: 1rem 0;
+	background-color: #D8D7D0;
+	height: 4rem;
+}
+
+.cursos_online_lista button{
+	width: 100%;
+	margin: .8rem auto;
+	padding: .4rem;
+	background-color: orange;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 0 0 .3rem .3rem;
+}
+
+.cursos_online_lista button:hover{
+	background-color: darkorange;
+}
+
+.cursos_online_lista img{
+	width: 100%;
+	height: 15rem;
+	border-radius: .3rem .3rem 0 0;
+}
+
+/*--------------- FIN CURSOS ONLINE ----------*/
+
+/*--------------- HERRAMIENTAS -----------------*/
+
+.titulosde_herramientas span{
+	margin: 0 .5rem;
+}
+
+.titulosde_herramientas h1{
+	display: block;
+	background-color: #111111;
+	color: orange;
+	padding: 1rem 0;
+	border-radius: .5rem 5rem 5rem .5rem;
+	cursor: pointer
+}
+
+.titulosde_herramientas h1:hover{
+	background-color: green;
+}
+
+#antivirus, #editores_texto, #foros{
+	display: none;
+}
+
+#antivirus ul li p, #editores_texto ul li p, #foros ul li p{
+	margin: 2rem 0;
+	color: blue;
+}
+
+#antivirus ul li p b, #editores_texto ul li p b, #foros ul li p b{
+	color: #ccc;
+}
+
+#foros{
+	margin-bottom: 4rem;
+}
+
+.links_descargas{
+	background-color: orange;
+	padding: 1rem;
+}
+
+/*--------------- FIN HERRAMIENTAS -----------------*/
+
+
+/*----------- @MEDIA -----------*/
+
+@media screen and (max-width: 1293px){
+	.menu_total nav ul li a {
+		padding:20px 5px;
+	}
+}
+
+@media screen and (max-width: 1220px){
+	.menu_total nav ul li a {
+		padding:20px 3px;
+	}
+}
+ 
+@media screen and (max-width:1200px ) {
+
+	.menu_total nav {
+		background-color:#f8bd00;
+		width:100%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+ 
+	.menu_total nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+
+	.menu_total nav ul li a {
+		color: #fff;
+	}
+
+	.menu_total nav ul li a:hover{
+		font-size: 1.2rem;
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+ 
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background-color: #f8bd00;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+ 
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+}
+
+@media screen and (max-width: 765px){
+
+	/*.slider4 .caption4 p i{
+		background-color: red;
+		margin: 1.3rem;
+		display: block;
+	}
+
+	.slider4 .caption4 p b{
+		margin-top: 2rem;
+		background-color: green;
+	}*/
+
+	.info_texto h2{
+		margin: 4rem 0;
+		margin-bottom: 1.5rem;
+	}
+
+	#enviar{
+		margin-bottom: 1rem;
+		cursor: pointer;
+	}
+
+	.section_contacto span p{
+		display: block;
+		margin-left: 0;
+	}
+
+	.slider li .caption p{
+		display: none;
+	}
+
+	.pagination, .pagination li{
+		display: none;
+	}
+
+	.left, .right{	
+		top: 10%;
+	}
+
+	.info{
+		height: 5rem;
+		margin-bottom: 1rem;
+	}
+
+	.info h1{
+		font-size: 16px;
+	}
+
+	.info p{
+  		display: none;
+	}
+
+	.slideshow3 ul li{
+		margin-top: 3rem;
+	}
+
+	.modificar_container{
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1510px;
+	}
+
+	header{
+		position: relative;
+		background-color: rgba(255,250,250,.1);
+	}
+
+	.la_Pagina{
+		margin: 2rem auto 0;
+	}
+
+	.slider4 li .caption4{
+		height: 25rem;
+	}
+
+	.slider4{
+		background-color: orange;
+		height: 25rem;
+	}
+
+	.slider4 li .caption4 p:last-child{
+		position: relative;
+		margin: 10rem auto;
+		background-color: floralwhite;
+	}
+
+	.slideshow4{
+		margin-bottom: 5rem;
+	}
+
+	.slider4 li{
+		height: 25rem;
+	}
+
+	.slider4 li .caption4{
+		height: 25rem;
+		background-color: orange;
+	}
+
+	header{
+		height: 12.8rem;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		background-color: #fff;
+	}
+
+	 .slider .caption{
+	 	margin-top: 5rem;
+	 }
+
+	.slider{
+		margin-top: 10rem;
+	}
+
+}
+
+@media screen and (max-width: 554px){
+
+	.slider .caption{
+		margin-top: 5.7rem
+	}
+
+	.slider{
+		margin-top: 11.5rem;
+	}
+
+	.slider li .caption p{
+		display: none;
+	}
+
+	.slider .caption b{
+		margin-top: 0;
+	}
+
+	.info p{
+		display: none;
+	}
+
+	.cuadro{
+		margin: 0 0 2rem 0;
+	}
+
+	.cuadro span{
+		font-size: 6rem;
+	}
+
+	.cuadro h3{
+		display: block;
+	}
+
+	.cuadro p{
+		width: 80%;
+	}
+
+	.info_formulario{
+		margin-bottom: 2rem;
+	} 
+
+	.slider li img{
+		height: 350px;
+	}
+
+}
+
+@media screen and (max-width: 1024px){
+	.cuadro{
+		margin: 0 0 5rem 0;
+	}
+
+	.contenido_empresa{
+		margin-top: 6rem; 
+	}
+
+	.etiquetas{
+		margin-top: 15px;
+	}
+
+	.redes_sociales{
+		margin: .9rem 0;
+	}
+
+	.redes_sociales h2{
+		margin: 15px 0;
+	}
+
+	.logo_footer img{
+		height: 120px;
+		width: 80%;
+		margin: .5rem;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 900px){
+
+	.container{
+		width: 100%;
+	}
+
+}
