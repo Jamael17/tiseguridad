@@ -10,7 +10,7 @@ $clientAddress = htmlspecialchars($_POST['residencia_registro']);
 $clientPhone = htmlspecialchars($_POST['telefono_registro']);
 $clientCourse = htmlspecialchars($_POST['elegir_curso']);
 $courseMeaning = "";
-$code = crypt($clientName.rand(1,2048),'st');
+$code = crypt($clientName.$clientLName.rand(1,2048),'st');
 
 // 
 
@@ -44,7 +44,7 @@ switch ($clientCourse) {
         $courseMeaning = "Undefine";
         break;
 }
-$sql = "INSERT INTO registro (nombre, apellido, email, pais, direccion, residencia, telefono, curso, code) 
+$sql = "INSERT INTO clientes (nombre, apellido, email, pais, direccion, residencia, telefono, curso, clientKey) 
         VALUES ('$clientName','$clientLName','$clientEmail','$clientCountry','$clientDirection','$clientAddress','$clientPhone','$courseMeaning','$code')";
 
 if(mysqli_query($conn,$sql)){
