@@ -14,7 +14,6 @@ body{
 	font-family: sans-serif;
 	background-color: #fff;
 	max-width: 1500px;
-	overflow-x: hidden; 
 }
 
 /* LA CLASE CONTENEDOR QUE VA EN TODAS LAS DIVS CONTENEDORAS*/
@@ -35,7 +34,7 @@ a{
 }
 
 header{
-	/* height: 11rem; */
+	height: 11rem;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -122,22 +121,15 @@ header{
 /*---------- LOGO-MENU -------------*/
 
 .logo img{
-	height: 50%;
-	width: 50%;
+	height: 90px;
 	margin: .5rem auto;
 }
-
+.logo-menu{
+	background-color: white;
+	border-bottom: 2px solid lightgray;
+}
 /*------------- MENU----------------*/
  
-.optionsBtn{
-	font-weight: bolder;
-	font-size: 2vw;
-	text-align: right;
-	position: relative;
-	left: 25px;
-	top: 10px;
-}
-
 .menu_total nav {
 	width:90%;
 	max-width:1000px;
@@ -148,7 +140,7 @@ header{
 .menu_bar {
 	display:none;
 }
-
+ 
 .menu_total nav ul {
 	overflow:hidden;
 	list-style:none;
@@ -181,7 +173,6 @@ header{
  
 .menu_total nav ul li a:hover {
 	border-bottom: 2px solid #D68B00;
-	
 }
  
 section {
@@ -351,8 +342,6 @@ hr{
 	cursor: pointer;
 	margin: .2rem auto;
 	color: #221E16;
-	position: relative;
-	left: 40%;
 }
 
 .contenido_empresa img, .contenido_empresa span{
@@ -555,6 +544,7 @@ hr{
  .section_formulario form label input{
  	background-color: #D4D4D4;
  	margin-bottom: 2rem;
+ 	color: orange;
  }
 
 .section_contacto h3, .section_contacto p, .section_formulario h2{
@@ -765,12 +755,14 @@ hr{
 /*.cursos_online_lista{
 	margin: 2rem auto;
 }
+
 .cursos_online_lista h2{
 	width: 100%;
 	padding: 1rem 0;
 	background-color: #D8D7D0;
 	height: 4rem;
 }
+
 .cursos_online_lista button{
 	width: 100%;
 	margin: .8rem auto;
@@ -780,9 +772,11 @@ hr{
 	cursor: pointer;
 	border-radius: 0 0 .3rem .3rem;
 }
+
 .cursos_online_lista button:hover{
 	background-color: darkorange;
 }
+
 .cursos_online_lista img{
 	width: 100%;
 	height: 15rem;
@@ -878,10 +872,6 @@ hr{
 		margin:0;
 		position: fixed;
 	}
-
-	header{
-		position: static;
-	}
  
 	.menu_total nav ul li {
 		display:block;
@@ -898,21 +888,16 @@ hr{
 	}
  
 	.menu_bar {
-		position: absolute;
 		display:block;
 		width:100%;
-		height: 80%;;
-		/* background:#ccc; */
-		background-color: #f8be0000;
-
+		background:#ccc;
 	}
-	.logo{
-		display: none;
-	}
+ 
 	.menu_bar .bt-menu {
 		display:block;
 		padding:20px;
-		color:#f8be00;
+		background-color: #f8bd00;
+		color:#fff;
 		text-decoration:none;
 		font-weight: bold;
 		font-size:25px;
@@ -922,7 +907,7 @@ hr{
 	}
  
 	.menu_bar span {
-		float:left;
+		float:right;
 		font-size:40px;
 	}
 }
@@ -934,7 +919,7 @@ hr{
 		margin: 1.3rem;
 		display: block;
 	}
-	
+
 	.slider4 .caption4 p b{
 		margin-top: 2rem;
 		background-color: green;
@@ -1102,15 +1087,10 @@ hr{
 	.la_Pagina h1{
 		font-size: 20px;
 	}
-	header{
-		position: absolute;
-	}
+	
 }
 
 @media screen and (max-width: 554px){
-	header{
-		position: absolute;
-	}
 
 	.la_Pagina{
 		margin: 13rem auto 0;
@@ -1167,10 +1147,6 @@ hr{
 		margin: 0 0 5rem 0;
 	}
 
-	header{
-		position: absolute;
-	}
-
 	.contenido_empresa{
 		margin-top: 6rem; 
 	}
@@ -1188,22 +1164,13 @@ hr{
 	}
 
 	.logo_footer img{
-		height: 80px;
+		height: 120px;
 		width: 80%;
 		margin: .5rem;
 		margin-bottom: 0;
 	}
 }
-#close_menu{
-	color: white;
-	font-weight: bolder;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-}
-#footer_logo{
-	width: 50%;
-	height: 50%;
-}
 @media screen and (max-width: 900px){
 
 	.container{
