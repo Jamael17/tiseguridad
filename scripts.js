@@ -42,6 +42,18 @@ $(document).ready(function(){
 			});
 		});
 
+		$('#close_menu').click(function() {
+			if (contador == 0){
+				$('.navegar').animate({
+					left: '-100%'
+				});
+				// CAMBIAR FUNCIÓN 
+				contador = 1;
+				// SALIRSE DE LA FUNCIÓN
+				return false;
+			}
+		});
+
 		// OCULTAR/MOSTRAR MENU
 		$('.menu_bar').click(function(){
  		
