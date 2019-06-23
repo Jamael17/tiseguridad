@@ -10,7 +10,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<link rel="shortcut icon" type="image/png" href="img/logo.png" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+	<link rel="stylesheet" href="flexboxgrid.min.css" />
 	<link rel="author" href="humans.txt" />
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="fonts.css">
@@ -21,15 +21,14 @@
 </head>
 <body>
 <!--
-
 xs ->Extra Small
 sm -> Small
 md -> Medium
 lg -> large
-
 -->
 
 	<header>
+		<div class="ver_info"><a href="#"><b>MÁS INFO</b></a></div>
 		<!-- ESTA ES LA INFORMACIÓN ALMACENADA EN EL SUBHEADER-->
 		<div class="subheader col-xs-12">
 			<div class="container">
@@ -47,14 +46,15 @@ lg -> large
 		</div>
 
 <hr/>
+
 		<!-- ESTE ES EL CONTENEDOR DEL LOGO Y DEL MENU-->
 		<div class="logo-menu">
 			<div class="container">
-				<div class="row middle-xs between-xs ">
+				<div id="logo_menu" class="row middle-xs between-xs ">
 					<div class="logo center-xs col-xs-6 col-sm-4 col-md-4 col-lg-2">
 
 					<!-- LOGO -->
-						<img src="img/logo.jpg" alt="logo" />
+						<img src="img/logo_fixed.png" alt="logo" />
 
 					</div>
 					
@@ -64,22 +64,23 @@ lg -> large
 						<div class="menu_total">
 							<!-- ESTE MENU ES EL DE LOS DISPOSITIVOS MOVILES-->
 							<div class="menu_bar center-xs">
-								<a href="#" class="bt-menu"><span class="icon-menu3"></span><p>Menu</p></a>
+								<a href="#" class="bt-menu"><span>&#x2630</span></a>
 							</div>
  						
  						<!-- ESTE ES EL MENU DE ESCRITORIO Y TELEVISORES (ESTAS CATEGORIAS 
  						(LI) SON LAS QUE SE VEN EL LOS DISPOSITIVOS MOVILES)-->
 						<nav class="navegar">
 							<ul>
+								<li><a href="#"id="close_menu"><span>X</span></a></li>
 								<li><a href="index.html"><span class="icon-home3"></span>INICIO</a></li>
 								<!-- ESTA REDIRECCIONA A UNA PARTE ESPECIFICA DENTRO DEL INDEX-->
-								<li><a href="index.html#services""><span class="icon-bug"></span>SERVICIOS</a></li>
+								<li><a href="index.html#services" id="servicios"><span class="icon-bug"></span>SERVICIOS</a></li>
 								<li><a href="herramientas.html"><span class="icon-wrench"></span>HERRAMIENTAS</a></li>
 								<li><a href="cursosonline.html"><span class="icon-video-camera"></span>CURSOS ONLINE</a></li>
 								<li><a href="cursosenfisico.html"><span class="icon-user-tie"></span>CURSOS EN FÍSICO</a></li>
+								
 							</ul>
 						</nav>
-
 					</div>
 						
 					<!-- FIN CODIGO MENU-->
@@ -88,9 +89,7 @@ lg -> large
 			</div>
 		</div>
 	</header>
-
 	<!--CODIGO SLIDER-->
-
 	<center>
 	<div class="modificar_container">
 		<div class="row middle-xs">
@@ -108,7 +107,6 @@ lg -> large
 							<b><a href="https://www.youtube.com/watch?v=QgJOjJxq5fo" target="_blank">Iniciar Curso</a></b>
 						</section>
 					</li>
-
 					<li>
 						<!--SEGUNDA IMAGEN SLIDER-->
 						<img src="img/2.jpg" alt="" />
@@ -120,11 +118,9 @@ lg -> large
 							<b><a href="https://www.youtube.com/watch?v=I3fzrEW1vf4" target="_blank">Iniciar Curso</a></b>
 						</section>
 					</li>
-
 					<li>
 						<!-- TERCER SLIDER-->
 						<img src="img/3.jpg" alt="" />
-
 						<!--INFORMACION TERCER SLIDER-->
 						<section class="caption col-xs-12 center-xs">
 							<h1>PENTESTING</h1>
@@ -132,11 +128,9 @@ lg -> large
 							<b><a href="https://www.youtube.com/watch?v=kbDsNHMb1GQ" target="_blank">Iniciar Curso</a></b>
 						</section>
 					</li>
-
 					<li>
 						<!-- CUARTO SLIDER-->
 						<img src="img/5.jpg" alt="" />
-
 						<!-- INFORMACION CUARTO SLIDER-->
 						<section class="caption col-xs-12 center-xs">
 							<h1>EDITOR DE CODIGO FUENTE</h1>
@@ -145,37 +139,27 @@ lg -> large
 						</section>
 					</li>
 				</ul>
-
 				<!-- ESTOS SON LOS PUNTOS QUE SE VEN DEBAJO DEL SLIDER SE AGREGAN ATOMATICAMENTE AL COLOCAR OTRO LI EN EL SLIDER, NO SE VEN A PARTIR DE 765px-->
 				<ol class="pagination">
-					
+	
 				</ol>
-
 				<!--FLECHA IZQUIERDA DEL SLIDER-->
 				<div class="left col-xs-1 center-xs">
 					<span class="icon-arrow-left"></span>
 				</div>
-
 				<!-- FLECHA DERECHA DEL SLIDER-->
 				<div class="right col-xs-1 center-xs">
 					<span class="icon-arrow-right"></span>
 				</div>
-
 			</div>
-
 		</div>
 	</div>
 </center>
-
 <br/><br/><br/>
-
 <center><hr /></center>
-
 	<!-- CONTENIDO LUEGO DEL SLIDER -->
-
 <div class="container">
 	<div class="row  center-xs">
-
 <!-- CONTENEDOR-->
 <div class="el_contenido col-xs-12">
 	<div class="titulo_slider col-xs-12">
@@ -185,23 +169,17 @@ lg -> large
 		</div>
 		<!-- TITULO DE LA SECCION-->
 		<h1 class=" col-xs-6">Cursos recientes</h1>
-
 		<!-- FLECHA IZQUIERDA (TOTALMENTE DIFERENTE A LA DE ARRIBA)-->
 		<div class="izq  col-xs-1">
 			<span class="icon-redo2"></span>
 		</div>
-
 	</div>
 </div>
 </div>
 </div>
-
-
-
 <!-- CONTENEDOR DE LOS OTROS SLIDERS DE CURSOS RECIENTE-->
 <div class="container">
 	<div class="row center-xs round-xs">
-
 	<!--SLIDER 1 CURSOS RECIENTES-->
 	<div class="slideshow1 col-xs-6 col-md-4">
 		<ul class="slider1">
@@ -216,7 +194,6 @@ lg -> large
 				</section>
 				</a>
 			</li>
-
 			<li>
 				<!-- INFORMACIÓN Y ENLACES DEL PRIMER SLIDER (SE VA ROTANDO CON LOS OTROS LI CONTENIDAS DENTRO DE ESTE UL (.slider1) )-->
 				<a href="https://www.youtube.com/watch?v=oBq8VrcHDms" target="_blank">
@@ -228,7 +205,6 @@ lg -> large
 				</section>
 				</a>
 			</li>
-
 			<li>
 				<!-- INFORMACIÓN Y ENLACES DEL PRIMER SLIDER (SE VA ROTANDO CON LOS OTROS LI CONTENIDAS DENTRO DE ESTE UL (.slider1) )-->
 				<a href="https://www.youtube.com/watch?v=CaPqh624bvo" target="_blank">
@@ -240,7 +216,6 @@ lg -> large
 				</section>
 				</a>
 			</li>
-
 			<li>
 				<!-- INFORMACIÓN Y ENLACES DEL PRIMER SLIDER (SE VA ROTANDO CON LOS OTROS LI CONTENIDAS DENTRO DE ESTE UL (.slider1) )-->
 				<a href="https://www.youtube.com/watch?v=p3IcM8Kwi4A&list=PLndeChFCC7Oq_uqLm2xzCiCiBJoaZo6Lm" target="_blank">
@@ -253,9 +228,7 @@ lg -> large
 				</a>
 			</li>
 		</ul>
-
 	</div>
-
 	<div class="slideshow2 col-xs-6 col-md-4">
 		<!-- SLIDER 2 CURSOS RECIENTES-->
 		<ul class="slider2">
@@ -270,7 +243,6 @@ lg -> large
 				</section>
 				</a>
 			</li>
-
 			<li>
 				<!-- INFORMACIÓN Y ENLACES DEL SEGUNDO SLIDER (SE VA ROTANDO CON LOS OTROS LI CONTENIDAS DENTRO DE ESTE UL (.slider2) )-->
 				<a href="https://www.youtube.com/watch?v=CaPqh624bvo" target="_blank">
@@ -282,7 +254,6 @@ lg -> large
 				</section>
 				</a>
 			</li>
-
 			<li>
 				<!-- INFORMACIÓN Y ENLACES DEL SEGUNDO SLIDER (SE VA ROTANDO CON LOS OTROS LI CONTENIDAS DENTRO DE ESTE UL (.slider2) )-->
 				<a href="https://www.youtube.com/watch?v=p3IcM8Kwi4A&list=PLndeChFCC7Oq_uqLm2xzCiCiBJoaZo6Lm" target="_blank">
@@ -294,7 +265,6 @@ lg -> large
 				</section>
 				</a>
 			</li>
-
 			<li>
 				<!-- INFORMACIÓN Y ENLACES DEL SEGUNDO SLIDER (SE VA ROTANDO CON LOS OTROS LI CONTENIDAS DENTRO DE ESTE UL (.slider2) )-->
 				<a href="https://www.youtube.com/watch?v=eQR0kYYgrGE" target="_blank">
@@ -307,9 +277,7 @@ lg -> large
 				</a>
 			</li>
 		</ul>
-
 	</div>
-
 	<div class="slideshow3 col-xs-6 col-md-4">
 		<!-- SLIDER 3 CURSOS RECIENTES-->
 		<ul class="slider3">
@@ -324,7 +292,6 @@ lg -> large
 				</section>
 				</a>
 			</li>
-
 			<li>
 				<!-- INFORMACIÓN Y ENLACES DEL TERCER SLIDER (SE VA ROTANDO CON LOS OTROS LI CONTENIDAS DENTRO DE ESTE UL (.slider3) )-->
 				<a href="https://www.youtube.com/watch?v=p3IcM8Kwi4A&list=PLndeChFCC7Oq_uqLm2xzCiCiBJoaZo6Lm" target="_blank">
@@ -336,7 +303,6 @@ lg -> large
 				</section>
 				</a>
 			</li>
-
 			<li>
 				<!-- INFORMACIÓN Y ENLACES DEL TERCER SLIDER (SE VA ROTANDO CON LOS OTROS LI CONTENIDAS DENTRO DE ESTE UL (.slider3) )-->
 				<a href="https://www.youtube.com/watch?v=eQR0kYYgrGE" target="_blank">
@@ -348,7 +314,6 @@ lg -> large
 				</section>
 				</a>
 			</li>
-
 			<li>
 				<!-- INFORMACIÓN Y ENLACES DEL TERCER SLIDER (SE VA ROTANDO CON LOS OTROS LI CONTENIDAS DENTRO DE ESTE UL (.slider3) )-->
 				<a href="https://www.youtube.com/watch?v=oBq8VrcHDms" target="_blank">
@@ -364,32 +329,23 @@ lg -> large
 		<!-- FIN UL SLIDER 3-->
 	</div>
 	<!-- FIN SLIDER 3-->
-
 	</div>
 </div>
-
-
-</div>
-
 </div>
 </div>
-
+</div>
 	<!-- FIN CONTENIDO-->
-
-
 	<!-- CONTENIDO EMPRESA ( LO QUE OFRECEMOS )-->
 	<!-- ESTA ES LA SECCION QUE AL DARLE CLICK EN LA SECCION SERVICIOS DEL MENU, NOS REDIRIGE AQUI-->
 	<a name="services"></a>
 	<!-- SEPARACIÓN PARA PODER VER BIEN LA SECCION-->
-	<div style="width:100%; height:3rem;">
+	<div id="separador">
 		
 	</div>
-
 	<!-- CONTENEDOR -->
 	<div class="contenido_empresa"
 		<div class="container">
 			<div class="row">
-
 				<!-- DIVS CON EL CONTENIDO -->
 				<div class="cuadro col-xs-12 col-sm-6 col-md-3">
 						<!-- ICONO DEL CANDADO-->
@@ -401,7 +357,6 @@ lg -> large
 					en la práctica, proporcionandote un enfoque mucho más
 					eficaz.</p>
 				</div>
-
 				<div class="cuadro col-xs-12 col-sm-6 col-md-3">
 					<!-- ICONO DE LAS ESTADISTICAS-->
 					<span class="icon-stats-bars2"></span>
@@ -412,7 +367,6 @@ lg -> large
 					de las herramientas más usadas en la actualidad.
 					</p>
 				</div>
-
 				<div class="cuadro col-xs-12 col-sm-6 col-md-3">
 					<!-- ICONO CARPETA CON EL SIGNO DE BIEN-->
 					<span class="icon-clipboard"></span>
@@ -423,7 +377,6 @@ lg -> large
 					posee cargos extras representando gran ventaja frente a
 					nuestra competencia.</p>
 				</div>
-
 				<div class="cuadro col-xs-12 col-sm-6 col-md-3">
 					<!-- ICONO DEL OJO-->
 					<span class="icon-eye-blocked"></span>
@@ -436,12 +389,8 @@ lg -> large
 			</div>
 		</div>
 	</div>
-
 	<!-- FIN DEL CONTENIDO EMPRESA -->
-
-
 	<!-- RECIBIR INFORMACIÓN  -->
-
 		<div class="recibir_info">
 			<div class="container">
 				<div class="row middle-xs center-xs">
@@ -449,7 +398,6 @@ lg -> large
 						<!-- TITULO PARA RECIBIR INFORMACIÓN-->
 						<h2>Recibir información de nuevos cursos: </h2>
 					</div>
-
 					<div class="info_formulario col-xs-12 col-sm-6 col-md-4 center-xs ">
 						
 						<!-- FORMULARIO PARA RECIBIR INFORMACIÓN-->
@@ -465,7 +413,6 @@ lg -> large
 
 	<!-- FIN RECIBIR INFORMACIÓN -->
 
-
 	<!-- OPINIONES -->
 
 		<div class="container">
@@ -475,17 +422,17 @@ lg -> large
 			</div>
 		</div>
 
-
 	<div class="container">
 		<div class="row center-xs">
 
 	<div class="slideshow4 col-xs-10 col-md-7">
+
 		<!-- ESTE ES OTRO SLIDER CON LAS OPINIONES-->
 		<ul class="slider4 ">
 			<li>
 				<!-- PRIMERA OPINION-->
 				<section class="caption4">
-					<p><i>El curso y el profesionalismo me han parecido excelentes. Terminaré las prácticas tranquilamente, pero me apuntaría otra vez con los ojos cerrados. Estás todo muy bien montado, tanto la estructura como la calidad de los contenidos, así como la experiencia y comunicación. Gracias al tutor, muy eficiente.</i></p>
+					<p><i id="cambiar_texto_celular">El curso y el profesionalismo me han parecido excelentes. Terminaré las prácticas tranquilamente, pero me apuntaría otra vez con los ojos cerrados. Estás todo muy bien montado, tanto la estructura como la calidad de los contenidos, así como la experiencia y comunicación. Gracias al tutor, muy eficiente.</i></p>
 					<br/><br/>
 					<!-- PERSONA QUE OPINO-->
 					<p><b>-Elena Alcalá Contreras</b></p>
@@ -496,7 +443,7 @@ lg -> large
 				<!--TERCERA OPINION-->
 				<section class="caption4">
 					
-					<p><i>La claridad de los temas, la dedicación por cada uno de los temas, la dicción y el apoyo continuo para resolver dudas. Además, han enseñado el tema de malware que muchos cursos lo pasan por encima, gracias a Francisco y a su equipo.</i></p>
+					<p><i id="cambiar_texto_celularDos">La claridad de los temas, la dedicación por cada uno de los temas, la dicción y el apoyo continuo para resolver dudas. Además, han enseñado el tema de malware que muchos cursos lo pasan por encima, gracias a Francisco y a su equipo.</i></p>
 					<br/><br/>
 					<!-- CUARTA OPINION -->
 					<p><b>-Carlos Pino Osorio</b></p>
@@ -506,20 +453,20 @@ lg -> large
 			<li>
 				<!--CUARTA OPINION-->
 				<section class="caption4">
-					<p><i>Hola el curso me gusto mucho ya que empece sin saber nada del software el tutor explica muy bien y se ve que tiene gran experiencia, en estos momentos trabajo como topógrafo en una zona rural y la verdad que a pesar de la dificultad de mis horarios laborales pude sacar el tiempo para este curso.</i></p>
+					<p><i id="cambiar_texto_celularTres">Hola el curso me gusto mucho ya que empece sin saber nada del software el tutor explica muy bien y se ve que tiene gran experiencia, en estos momentos trabajo como topógrafo en una zona rural y la verdad que a pesar de la dificultad de mis horarios laborales pude sacar el tiempo para este curso.</i></p>
 					<br/><br/>
 					<!-- CUARTA OPINION -->
 					<p><b>-Andrés Pérez Bustos</b></p>
 				</section>
 			</li>
 		</ul>
+
 	</div>
 
 			</div>
 		</div>
 
 	<!-- FIN OPINIONES-->
-
 
 	<!-- FOOTER -->
 
@@ -551,15 +498,15 @@ lg -> large
 				<!-- NUESTRAS REDES SOCIALES-->
 				<div class="redes_sociales col-xs-12 col-md-4 center-xs ">
 					<h2>Redes Sociales</h2>
-					<a href="#"><span class="icon-facebook2"></span></a>
-					<a href="#"><span class="icon-instagram"></span></a>
-					<a href="#"><span class="icon-whatsapp"></span></a>
+					<a href=" https://www.facebook.com/Seguridad-TI-163051571261639/?tn-str=k*F" target="_blank"><span class="icon-facebook2"></span></a>
+					<a href="https://www.instagram.com/tiseguridad/?hl=es-la"><span class="icon-instagram" target="_blank"></span></a>
+					<a href="#" target="_blank"><span class="icon-whatsapp"></span></a>
 				</div>
 
 				<!-- LOGO DE LA EMPRESA-->
 				<div class="logo_footer col-xs-12 col-md-4 center-xs end-md">
 					<!-- IMAGEN DEL LOGO-->
-					<img src="img/logo.jpg" alt="logo" />
+					<img id="footer_logo" src="img/logo_fixed.png" alt="logo"/>
 				</div>
 
 			</div>
@@ -582,10 +529,11 @@ lg -> large
 		</div>
 		</div>
 	<!-- FIN DISEÑADORES-->
-
 	<!-- SCRIPTS -->
-	<script src="jquery.js"></script>
-	<script src="scripts.js"></script>
+	<script  src="jquery.js"></script>
+	<script async src="scripts.js"></script>
+	<script src="index.js"></script>
+	<script src="generales.js"></script>
 	
 </body>
 </html>
