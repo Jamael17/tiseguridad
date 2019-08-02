@@ -2,7 +2,7 @@
 
 	if ( isset($_POST['correo_info']) && !empty($_POST['correo_info']) ) {
 
-		$destino = "alexperezofficial01@gmail.com"; // Correo al que se enviara la información
+		$destino = "somemail@gmail.com"; // Correo al que se enviara la información
 		$desde = "From:"."Inscripcion"; // Titulo del correo
 		$asunto = "Solicitud de información sobre nuevos cursos"
 		$mensaje = "Correo: " . $_POST['correo_info'] . "\n";
