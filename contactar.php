@@ -24,7 +24,7 @@
 				
 				setTimeout(function(){
 					alert(prueba);
-					location.href = \"https://seguridadtiprueba.000webhostapp.com/index.html\";
+					location.href = \"https://index.html";
 				}, 4000);
 				
 			</script>";
